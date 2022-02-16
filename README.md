@@ -2,11 +2,12 @@
 unity projekts ar UI elementu lietojumu
 
 "Uzdevumu saraksts"
-- [ ] Button elements
-- [ ] Text Elements
-- [ ] Input Field elements
-- [ ] Toggle elements
-- [ ] Panela elements
-- [ ] Slider elements
-- [ ] Audio Source elements
-- [ ]  C# skriptu izveide
+- [x] Button elements
+- [x] Text Elements
+- [x] Input Field elements
+- [x] Toggle elements
+- [] Panela elements
+- [] Slider elements
+- [] Audio Source elements
+- [] Drop down elements
+- [x]  C# skriptu izveide
