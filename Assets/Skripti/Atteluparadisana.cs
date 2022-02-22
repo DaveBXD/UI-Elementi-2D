@@ -1,12 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Atteluparadisana : MonoBehaviour {
 	public GameObject bins;
 	public GameObject lacitis;
 	public GameObject tante;
 	public GameObject masina;
+	public GameObject attelaTuretajs;
+	public Sprite[] attelumasivs;
+	public GameObject slaideris;
+
 
 	public void binaAttelosana(bool vertiba){
 		bins.SetActive (vertiba);
@@ -28,4 +33,20 @@ public class Atteluparadisana : MonoBehaviour {
 
 	}
 
+	public void izkritosais(int skaitlis){
+		if (skaitlis == 0)
+			attelaTuretajs.GetComponent<Image> ().sprite = attelumasivs [0];
+		
+		else  if (skaitlis == 1)
+			attelaTuretajs.GetComponent<Image> ().sprite = attelumasivs [1];
+		
+		else  if (skaitlis == 2)
+			attelaTuretajs.GetComponent<Image> ().sprite = attelumasivs [2];
+
+}
+
+	public void mainitLielumu(){
+		float pasreizejaVertiba = slaideris.GetComponent<Slider> ().value;
+		attelaTuretajs.transform.localScale = new Vector2 (1F * pasreizejaVertiba, 1F * pasreizejaVertiba);
+}
 }
